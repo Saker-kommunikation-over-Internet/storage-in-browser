@@ -17,6 +17,11 @@ document.cookie = "name=Kristian;" //sätter cookien name till kristian
 document.cookie = "color=green;" //sätter en till cookie. Notera att det bara är att skriva =.
 console.log(document.cookie)
 
+//Expiration
+//Cookies utan expiration håller genom en session.
+document.cookie = `name=Kristian; expires=${new Date(2024, 0, 2).toUTCString()}`
+document.cookie = `name=Kristian; expires=${new Date(2020, 0, 2).toUTCString()}` //Kommer att försvinna direkt.
+
 /* 
 1. localStorage setItem, getItem
 2. sessionStorage
