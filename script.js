@@ -12,6 +12,11 @@ console.log(sessionStorage.getItem("theme"));
 localStorage.clear()
 sessionStorage.clear()
 
+//Cookies
+document.cookie = "name=Kristian;" //sätter cookien name till kristian
+document.cookie = "color=green;" //sätter en till cookie. Notera att det bara är att skriva =.
+console.log(document.cookie)
+
 /* 
 1. localStorage setItem, getItem
 2. sessionStorage
